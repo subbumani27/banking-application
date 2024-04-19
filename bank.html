@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Application</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banking Application</h1>
+        <div id="login" class="active">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="dashboard" class="hidden">
+            <h2>Welcome <span id="user"></span>!</h2>
+            <p id="balance">Balance: Rs.1000</p>
+            <input type="number" id="amount" placeholder="Amount">
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="bank.js"></script>
+</body>
+</html>
+
+
